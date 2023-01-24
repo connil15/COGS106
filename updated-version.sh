@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo git status
+
 now=$(date)
 touch file.txt
 echo "$now" > file.txt
