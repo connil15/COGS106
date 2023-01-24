@@ -9,4 +9,4 @@ git add file.txt
 git commit -m "updated"
 git push
 
-echo git status
+git status
