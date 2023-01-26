@@ -7,6 +7,6 @@ touch version
 echo "$now" > version
 
 git add updated-version.sh
-git add file.txt
+git add version
 git commit -m "updated"
 git push
