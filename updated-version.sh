@@ -3,8 +3,8 @@
 git pull
 
 now=$(date)
-touch file.txt
-echo "$now" > file.txt
+touch version
+echo "$now" > version
 
 git add updated-version.sh
 git add file.txt
