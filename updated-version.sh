@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git pull
+
 now=$(date)
 touch file.txt
 echo "$now" > file.txt
