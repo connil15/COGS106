@@ -121,10 +121,7 @@ class SignalDetection:
         def loss_func(a):
             loss_sum = 0
             for sdt in sdtList:
-                falseAlarmRate = sdt.falseAlarm_rate()
-                hitRate = sdt.rocCurve([falseAlarmRate], a)[0]
-                loss = sdt.nLogLikelihood(hitRate, falseAlarmRate)
-                loss_sum += loss
+                loss_sum = sdt.rocLoss(a, sdtList)
             return loss_sum
         
         #a_hat
